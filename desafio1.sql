@@ -1,16 +1,16 @@
 DROP DATABASE IF EXISTS SpotifyClone;
 CREATE DATABASE SpotifyClone;
 
-CREATE TABLE SpotifyClone.Planos(
-	plano_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+CREATE TABLE SpotifyClone.Planos (
+    plano_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     plano VARCHAR(30) NOT NULL,
-    valor_plano DECIMAL(4, 2) NOT NULL
-) ENGINE innoDB;
+    valor_plano DECIMAL(4 , 2 ) NOT NULL
+)  ENGINE INNODB;
 
-CREATE TABLE SpotifyClone.Artista(
-	artista_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+CREATE TABLE SpotifyClone.Artista (
+    artista_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     artista VARCHAR(60) NOT NULL
-) ENGINE innoDB;
+)  ENGINE INNODB;
 
 CREATE TABLE SpotifyClone.Usuario(
 	usuario_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -102,7 +102,7 @@ INSERT INTO SpotifyClone.Album (album, artista_id, ano_de_lancamento)
     ('Chained Down', 5, 2007),
     ('Cabinet of fools', 5, 2012),
     ('No guarantees', 5, 2015),
-    ('Apparatus', 5, 2015);
+    ('Apparatus', 6, 2015);
 
 INSERT INTO SpotifyClone.cancao (cancao, album_id, artista_id, duracao_segundos)
 	VALUES
